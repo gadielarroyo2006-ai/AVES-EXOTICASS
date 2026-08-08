@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Aves Exotica </title>
+    <link rel="shortcut icon" href="../Imagenes/1G.png">
+
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <link rel="stylesheet" href="../Estilos/menu.css">
+    <link rel="stylesheet" href="../Estilos/contenido.css">
+</head>
+
+<body>
+    <section id="contenedor"> 
+        <Header>
+            <h1 id="titulo"> </h1>
+        </Header>
+
+
+    </section id="menuss">
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../Paginas/Categorias.html">CATEGORIA</a></li>
+            <li><a href="../Paginas/dISTRUbucion.html">DISTRIBUCIÓN</a></li>
+            <li><a href="../Paginas/En peligro.html">EN PELIGRO</a></li>      
+        </ul>
+    </nav>
+    <section>
+
+    <style>
+
+    #noticia1 {
+        width: 1060px;
+        margin: 30px auto 110px auto;
+        padding: 20px;
+        box-sizing: 120;
+
+        background: rgb(8, 8, 8);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    
+    }
+
+    #noticia1 > h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+        #introduccion-peligro {
+            width: 100%;
+            background: white;
+            padding: 30px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        #introduccion-peligro p {
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: justify;
+            margin: 0 0 18px 0;
+        }
+
+        #aclaracion {
+            background: #eeeeee;
+            padding: 22px 25px;
+            margin-top: 25px;
+            border-left: 5px solid #777;
+            box-sizing: border-box;
+        }
+
+        #aclaracion h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        #aclaracion p {
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        #categorias-riesgo {
+            text-align: center;
+            font-size: 17px;
+            line-height: 2;
+            margin-top: 20px;
+            padding: 12px;
+            background: white;
+        }
+
+        .seccion-peligro {
+            width: 100%;
+            background: white;
+            padding: 30px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        .seccion-peligro > h2 {
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .seccion-peligro > p {
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .ave {
+            width: 100%;
+            background: #f5f5f5;
+            margin-bottom: 25px;
+            padding: 22px;
+            box-sizing: border-box;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            border-left: 5px solid #777;
+        }
+
+        .ave-texto {
+            flex: 1;
+        }
+
+        .ave-texto h3 {
+            font-size: 21px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .ave-texto p {
+            font-size: 15px;
+            line-height: 1.65;
+            text-align: justify;
+            margin: 0 0 12px 0;
+        }
+
+        .ave-texto ul {
+            padding-left: 22px;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .ave-texto li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
+        .ave-imagen {
+            width: 280px;
+            min-width: 280px;
+            height: 280px;
+            overflow: hidden;
+            background: #ddd;
+        }
+
+        .ave-imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .dato-ave {
+            background: white;
+            padding: 13px 15px;
+            margin-top: 12px;
+            border-left: 4px solid #888;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .nivel-vulnerable {
+            border-left-color: #d6b400;
+        }
+
+        .nivel-peligro {
+            border-left-color: #e07800;
+        }
+
+        .nivel-critico {
+            border-left-color: #c62828;
+        }
+
+        .nivel-ew {
+            border-left-color: #333;
+        }
+
+        #final-peligro {
+            width: 100%;
+            background: white;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.7;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+
+        }
+
+        
+
+    </style>
+
+
+
+
+    <section id="noticia1">
+
+        <h1>
+            Aves exóticas en peligro de extinción
+        </h1>
+
+        <article id="introduccion-peligro">
+
+            <p>
+
+                Muchas aves de aspecto llamativo se encuentran amenazadas
+                por la <strong>pérdida de hábitat, la caza, el tráfico ilegal
+                de fauna, las especies invasoras y el cambio climático.</strong>
+
+            </p>
+
+            <p>
+
+                La situación varía considerablemente entre especies:
+                algunas todavía cuentan con miles de ejemplares, mientras
+                que otras sobreviven con apenas unos cientos. BirdLife
+                International señala que, en su evaluación mundial más
+                reciente, <strong>223 especies de aves están clasificadas
+                como En Peligro Crítico.</strong>
+
+            </p>
+
+
+            <div id="aclaracion">
+
+                <h2>
+                    Breve aclaración
+                </h2>
+
+                <p>
+
+                    Las estimaciones de población de la UICN pueden utilizar
+                    diferentes métodos y años de referencia. Por ejemplo,
+                    decir que quedan <strong>400 parejas de águila filipina</strong>
+                    no equivale a decir que quedan exactamente 400 individuos.
+
+                </p>
+
+
+            </div>
+
+        </article>
+
+
+        <!-- VULNERABLES -->
+
+        <section class="seccion-peligro">
+
+            <h2>
+                🟡 1. Vulnerables (VU) — Riesgo alto
+            </h2>
+
+            <p>
+
+                Son especies que enfrentan un <strong>alto riesgo de
+                extinción en estado silvestre</strong>, aunque su situación
+                todavía no es tan extrema como la de las categorías superiores.
+
+            </p>
+
+
+            <article class="ave nivel-vulnerable">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Guacamaya jacinta
+                    </h3>
+
+                    <p>
+                        <em>Anodorhynchus hyacinthinus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong> ~4,300 adultos.
+                        </li>
+
+                        <li>
+                            <strong>Principal amenaza:</strong>
+                            pérdida de hábitat y tráfico ilegal.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        La guacamaya jacinta es una de las guacamayas más
+                        grandes del mundo y destaca por su intenso plumaje
+                        azul. Aunque todavía existen miles de ejemplares,
+                        la pérdida de su hábitat y el comercio ilegal
+                        continúan siendo amenazas importantes.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        su enorme pico está adaptado para romper semillas
+                        y frutos extremadamente duros.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-01.jpg"
+                         alt="Guacamaya jacinta">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-vulnerable">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Guacamaya roja
+                    </h3>
+
+                    <p>
+                        <em>Ara macao</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong> miles de ejemplares.
+                        </li>
+
+                        <li>
+                            <strong>Principal amenaza:</strong>
+                            deforestación y captura ilegal.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        La guacamaya roja es reconocida por su plumaje
+                        principalmente rojo, acompañado de tonalidades
+                        amarillas, azules y verdes. Habita principalmente
+                        en regiones tropicales de América.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        puede formar parejas que permanecen juntas durante
+                        largos periodos de tiempo.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-02.jpg"
+                         alt="Guacamaya roja">
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- EN PELIGRO -->
+
+        <section class="seccion-peligro">
+
+            <h2>
+                🟠 2. En Peligro (EN) — Riesgo muy alto
+            </h2>
+
+            <p>
+
+                Estas especies tienen un <strong>riesgo muy alto de
+                desaparecer en estado silvestre.</strong>
+
+            </p>
+
+
+            <article class="ave nivel-peligro">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Guacamaya verde mayor
+                    </h3>
+
+                    <p>
+                        <em>Ara ambiguus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong> ~700–1,000 adultos.
+                        </li>
+
+                        <li>
+                            <strong>Característica:</strong>
+                            una de las guacamayas más amenazadas de América.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        La guacamaya verde mayor habita en los bosques de
+                        Centroamérica y el norte de Sudamérica. Su población
+                        continúa disminuyendo debido principalmente a la
+                        pérdida de bosques y la captura de ejemplares.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        depende especialmente de árboles grandes y antiguos
+                        para encontrar lugares adecuados donde anidar.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-03.jpg"
+                         alt="Guacamaya verde mayor">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-peligro">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Loro gris africano
+                    </h3>
+
+                    <p>
+                        <em>Psittacus erithacus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            población silvestre en fuerte declive.
+                        </li>
+
+                        <li>
+                            <strong>Característica:</strong>
+                            famoso por su capacidad para imitar sonidos.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        El loro gris africano es una de las aves con mayor
+                        capacidad para aprender e imitar sonidos. La captura
+                        para el comercio de mascotas y la pérdida de hábitat
+                        han provocado importantes disminuciones de sus
+                        poblaciones silvestres.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        algunos individuos pueden aprender y reproducir
+                        una gran cantidad de sonidos diferentes.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-04.jpg"
+                         alt="Loro gris africano">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-peligro">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Grulla coronada gris
+                    </h3>
+
+                    <p>
+                        <em>Balearica regulorum</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            miles, pero en descenso.
+                        </li>
+
+                        <li>
+                            <strong>Característica:</strong>
+                            corona de plumas doradas.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Esta elegante ave africana destaca por la corona
+                        de plumas doradas que rodea su cabeza. Habita
+                        principalmente en humedales, pastizales y zonas
+                        abiertas de África oriental y meridional.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        sus elaboradas exhibiciones incluyen movimientos
+                        de cabeza, saltos y despliegues de sus alas.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-05.jpg"
+                         alt="Grulla coronada gris">
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- PELIGRO CRÍTICO -->
+
+        <section class="seccion-peligro">
+
+            <h2>
+                🔴 3. En Peligro Crítico (CR) — Riesgo extremadamente alto
+            </h2>
+
+            <p>
+
+                Aquí encontramos algunas de las aves más amenazadas del
+                planeta. La UICN utiliza esta categoría cuando una especie
+                enfrenta un <strong>riesgo extremadamente alto de extinción
+                en estado silvestre.</strong>
+
+            </p>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Cálao de casco
+                    </h3>
+
+                    <p>
+                        <em>Rhinoplax vigil</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            población muy reducida.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Sudeste Asiático.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        El cálao de casco es un ave de gran tamaño
+                        característica de los bosques del Sudeste Asiático.
+                        Su llamativo casco y su gran pico lo convierten en
+                        una de las aves más singulares de la región.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        el casco de su pico es especialmente sólido y
+                        constituye una característica única dentro de los
+                        cálaos.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-06.jpg"
+                         alt="Cálao de casco">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Guacamaya barbazul
+                    </h3>
+
+                    <p>
+                        <em>Ara glaucogularis</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            menos de 350 individuos en estado silvestre.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Bolivia.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Es una de las guacamayas más raras del mundo.
+                        Su población silvestre se encuentra principalmente
+                        en las sabanas del Beni, en Bolivia.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        también es conocida como guacamaya de garganta azul
+                        debido a la característica coloración azul de la
+                        zona de su garganta.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-07.jpg"
+                         alt="Guacamaya barbazul">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Estornino de Bali
+                    </h3>
+
+                    <p>
+                        <em>Leucopsar rothschildi</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            ~50–100 ejemplares en estado silvestre.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Bali, Indonesia.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Esta pequeña ave blanca, también conocida como
+                        mynah de Bali, es endémica de la isla de Bali.
+                        Su población silvestre se encuentra extremadamente
+                        reducida.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        presenta una llamativa cresta blanca y una
+                        característica zona azul alrededor de los ojos.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-08.jpg"
+                         alt="Estornino de Bali">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Águila filipina
+                    </h3>
+
+                    <p>
+                        <em>Pithecophaga jefferyi</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            ~400 parejas.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Filipinas.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Es una de las águilas forestales más grandes del
+                        mundo. Solamente se encuentra en algunas islas
+                        de Filipinas y depende de grandes extensiones
+                        de bosque para sobrevivir.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        una pareja puede necesitar una enorme extensión
+                        de bosque para encontrar suficiente alimento
+                        y criar a sus polluelos.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-09.jpg"
+                         alt="Águila filipina">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Avutarda india
+                    </h3>
+
+                    <p>
+                        <em>Ardeotis nigriceps</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            ~110–150 ejemplares.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            India.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Esta enorme ave terrestre se encuentra entre las
+                        aves más amenazadas del planeta. Su población se
+                        concentra principalmente en el desierto de Thar,
+                        en India.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        es una de las aves voladoras más pesadas del mundo.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-10.jpg"
+                         alt="Avutarda india">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Kakapo
+                    </h3>
+
+                    <p>
+                        <em>Strigops habroptilus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            236 ejemplares.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Nueva Zelanda.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        El kakapo es un loro nocturno que
+                        <strong>no puede volar</strong> y es endémico
+                        de Nueva Zelanda. En enero de 2026 se contabilizaban
+                        solamente 236 ejemplares vivos.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        es el loro más pesado del mundo y tiene hábitos
+                        principalmente nocturnos.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-11.jpg"
+                         alt="Kakapo">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-critico">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Cóndor de California
+                    </h3>
+
+                    <p>
+                        <em>Gymnogyps californianus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Población:</strong>
+                            ~561 individuos a finales de 2023.
+                        </li>
+
+                        <li>
+                            <strong>Distribución:</strong>
+                            Estados Unidos y México.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        Esta especie estuvo al borde de la extinción:
+                        durante la década de 1980 solamente quedaban
+                        22 ejemplares en todo el planeta. Gracias a
+                        programas de reproducción y reintroducción,
+                        su población comenzó a recuperarse.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        es el ave terrestre voladora más grande de
+                        Norteamérica.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-12.jpg"
+                         alt="Cóndor de California">
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- EXTINTAS EN ESTADO SILVESTRE -->
+
+        <section class="seccion-peligro">
+
+            <h2>
+                ⚫ 4. Extintas en estado silvestre
+            </h2>
+
+            <p>
+
+                <strong>Extinto en Estado Silvestre (EW)</strong> no significa
+                que la especie haya desaparecido completamente. Significa
+                que <strong>ya no existe una población silvestre estable
+                dentro de su área natural</strong> y los ejemplares
+                supervivientes dependen de la cautividad o de programas
+                de conservación.
+
+            </p>
+
+
+            <article class="ave nivel-ew">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Martín pescador de Guam
+                    </h3>
+
+                    <p>
+                        <em>Todiramphus cinnamominus</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Situación:</strong>
+                            extinto en estado silvestre.
+                        </li>
+
+                        <li>
+                            <strong>Supervivencia:</strong>
+                            cautiverio y programas de reintroducción.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        La especie desapareció de Guam debido principalmente
+                        a la introducción de la <strong>serpiente arbórea
+                        marrón</strong>, un depredador invasor que afectó
+                        gravemente a las aves nativas de la isla.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        en 2024 comenzaron las primeras liberaciones
+                        experimentales en Palmyra Atoll.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-13.jpg"
+                         alt="Martín pescador de Guam">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-ew">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Paloma de Socorro
+                    </h3>
+
+                    <p>
+                        <em>Zenaida graysoni</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Situación:</strong>
+                            extinta en estado silvestre.
+                        </li>
+
+                        <li>
+                            <strong>Supervivencia:</strong>
+                            principalmente en cautiverio.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        La última observación confirmada en estado silvestre
+                        ocurrió en <strong>1972</strong>. La especie desapareció
+                        de su isla natal debido principalmente a depredadores
+                        introducidos, especialmente gatos.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        su recuperación depende de programas de reproducción
+                        y de la posibilidad de devolver ejemplares a su
+                        hábitat natural.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-14.jpg"
+                         alt="Paloma de Socorro">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-ew">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Cuervo hawaiano / ʻAlalā
+                    </h3>
+
+                    <p>
+                        <em>Corvus hawaiiensis</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Situación:</strong>
+                            extinto en estado silvestre.
+                        </li>
+
+                        <li>
+                            <strong>Supervivencia:</strong>
+                            programas de conservación.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        El ʻAlalā es una especie de cuervo endémica de
+                        Hawái. La desaparición de la población silvestre
+                        convirtió a los programas de conservación en una
+                        parte fundamental de su supervivencia.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        es reconocido por su inteligencia y por su capacidad
+                        para utilizar objetos de su entorno.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-15.jpg"
+                         alt="Cuervo hawaiano">
+
+                </div>
+
+            </article>
+
+
+            <article class="ave nivel-ew">
+
+                <div class="ave-texto">
+
+                    <h3>
+                         Guacamayo de Spix
+                    </h3>
+
+                    <p>
+                        <em>Cyanopsitta spixii</em>
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>Situación:</strong>
+                            históricamente extinto en estado silvestre;
+                            actualmente en proceso de reintroducción.
+                        </li>
+
+                        <li>
+                            <strong>Supervivencia:</strong>
+                            cautiverio y zonas de reintroducción.
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        El guacamayo de Spix se hizo famoso por su intenso
+                        plumaje azul y por su extrema rareza. Durante años
+                        desapareció de la naturaleza, sobreviviendo gracias
+                        a programas de reproducción en cautiverio.
+
+                    </p>
+
+                    <div class="dato-ave">
+
+                        <strong>Dato curioso:</strong>
+                        su historia inspiró al personaje de Blu en la
+                        película animada <em>Río</em>.
+
+                    </div>
+
+                </div>
+
+
+                <div class="ave-imagen">
+
+                    <img src="../Imagenes/EnPELigro0o-16.jpg"
+                         alt="Guacamayo de Spix">
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section id="final-peligro">
+
+            <strong>
+                La conservación puede marcar la diferencia
+            </strong>
+
+            <br><br>
+
+            La situación de estas aves demuestra que la conservación,
+            la reproducción controlada, la protección de los hábitats
+            y la reintroducción de especies pueden desempeñar un papel
+            fundamental para evitar que desaparezcan.
+
+            <br><br>
+
+            Proteger una especie no significa únicamente salvar a sus
+            individuos, sino también conservar los ecosistemas de los
+            que depende para sobrevivir.
+
+        </section>
+
+
+    </section>
+
+
+   <footer>
+    
+        <h5 id="parrafo"> 
+            Aves del Trópico MX
+            <br>Dirección: Av. Paseo del Bosque Tropical #125, Col. Atasta, Villahermosa, Tabasco, México.
+            <br>Horario: Lunes a Viernes de 9:11 a.m. a 6:00 p.m. | Sábados de 10:00 a.m. a 2:00 p.m.
+            <br>Correo: contacto@avesdeltropicomx.com | Teléfono: (993) 555-2487
+            <br>© 2026 Aves del Trópico MX. Sitio web ficticio creado con fines educativos :D
+</h5>
+
+         <article id="redes">
+		        <a href="https://www.facebook.com/BirdLifeInternational/" target="_blank"><img src="Imagenes/facebuk.png" width="30" height="30" alt=""/></a>
+			    <a href="https://www.instagram.com/birdlife.international/" target="_blank"><img src="Imagenes/INSTAGLAM.png" width="30" height="30" alt=""/></a>
+			    <a href="https://x.com/BirdLife_News?s=20" target="_blank"><img src="Imagenes/Equiz.png" width="30" height="30" alt=""/>
+         </article>
+</footer>
+
+
+    </section>
+</body>
+</html>
