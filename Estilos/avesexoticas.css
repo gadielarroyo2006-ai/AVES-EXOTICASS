@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+#informacion {
+    margin-top: 0px;
+    background-color: rgb(0, 0, 0);   
+    border-top: 1px solid #040404;
+
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+
+}
+
+#informacion #descripcion{
+    margin-top: 8px;
+    background-color: white;
+    width: 1150px;
+    height: 200px;
+
+}
+
+#parrafo-inicio{
+    text-align: center;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#titulosdelindex{
+    color: #040404;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+}
+
+p{
+    color: #040404;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+#descripcionn{
+    width: 1060px;
+    background: white;
+    margin: -15px auto;
+    padding: 45px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+
+#descripcionn h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#descripcionn p{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+#descripcionn img{
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#redes{
+    display: flex;
+    margin-top: -60px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;             
+    padding: 70px 0;
+    
+}
+
+#redes img{
+    transition: 0.3s;
+}
+
+#redes img:hover{
+    transform: scale(1.5);
+}
+
+#descripcionnn{
+    width: 1060px;
+    background: white;
+    margin: 40px auto;
+    padding: 45px;
+    margin-bottom: 110px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+
+#descripcionnn h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+#descripcionnn p{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+#descripcionnn img{
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.video-container a {
+    display: block;
+    margin-top: 8px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.video-container a:hover {
+    text-decoration: underline;
+}
